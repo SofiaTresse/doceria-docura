@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doçura Delícia - Doceria Artesanal</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <a href="#" class="logo">Doçura<span>.</span></a>
+      <nav>
+        <button class="menu-toggle" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav-links">
+          <a href="#inicio">Início</a>
+          <a href="#doces">Doces</a>
+          <a href="#sobrenos">Sobre</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Delícias para <span>todos os momentos</span></h1>
+        <p>Uma seleção irresistível de doces artesanais. Do brownie fudgy aos cookies crocantes, cada criação é feita com ingredientes selecionados e muito carinho.</p>
+        <div class="hero-buttons">
+          <a href="#doces" class="btn-primary">Ver Cardápio Completo</a>
+          <a href="#contato" class="btn-secondary">Faça um Pedido</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="sweet-showcase">
+          <div class "sweet-item item-1"></div>
+          <div class="sweet-item item-2"></div>
+          <div class="sweet-item item-3"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="doces" class="section">
+      <div class="section-header">
+        <h2>Nossos <span>Doces</span></h2>
+        <p>Variedade irresistível para satisfazer todos os desejos</p>
+      </div>
+      <div class="products-grid">
+        <article class="product-card">
+          <div class="product-image">
+            <div class="product-badge">Clássico</div>
+            <img src="https://images.unsplash.com/photo-1563951390714-5a16481024ea?w=400&q=80" alt="Brownie">
+            <div class="product-overlay">
+              <h3>Brownies</h3>
+              <p>R$ 22,00</p>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">
+            <div class="product-badge">Italiano</div>
+            <img src="https://images.unsplash.com/photo-1577931160557-6a8616805d1d?w=400&q=80" alt="Palmier">
+            <div class="product-overlay">
+              <h3>Palmiers Italianos</h3>
+              <p>R$ 18,00</p>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1555662883-6e2c5d8d6165?w=400&q=80" alt="Cookie">
+            <div class="product-overlay">
+              <h3>Cookies Artesanais</h3>
+              <p>R$ 15,00</p>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-image">
+            <div class="product-badge">Novo</div>
+            <img src="https://images.unsplash.com/photo-1511678536504-6121a196a94f?w=400&q=80" alt="Macarons">
+            <div class="product-overlay">
+              <h3>Macarons</h3>
+              <p>R$ 25,00 uni.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="sobrenos" class="section">
+      <div class="about-content">
+        <div class="about-image">
+          <div class="image-placeholder">
+            <div class="chef-icon"></div>
+            <img src="https://images.unsplash.com/photo-1446963114133-14b3f18c5c5e?w=500&q=80" alt="Boleira trabalhando">
+          </div>
+        </div>
+        <div class="about-text">
+          <h2>Sobre Nós</h2>
+          <p>Há mais de 10 anos espalhando doçura por aqui. Na Doçura Delícia, acreditamos que cada momento merece um doce especial. Nossos doces são feitos artesanalmente, com receitas testadas e ingredientes selecionados fresquinhos todos os dias.</p>
+          <ul class="about-features">
+            <li><i class="icon"></i>Feitos na hora</li>
+            <li><i class="icon"></i>Ingredientes frescos</li>
+            <li><i class="icon"></i>Entrega em toda região</li>
+            <li><i class="icon"></i>Atendimento personalizado</li>
+          </ul>
+          <a href="#contato" class="btn-secondary">Venha nos visitar</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="contact-content">
+        <div class="contact-image">
+          <div class="image-placeholder">
+            <div>📍</div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h2>Fale Conosco</h2>
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="Seu nome" required>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Seu e-mail" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" placeholder="Seu telefone">
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Mensagem" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary send-btn">Enviar Mensagem</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <a href="#" class="footer-logo">Doçura<span>.</span></a>
+        <div class="footer-links">
+          <a href="#inicio">Início</a>
+          <a href="#doces">Doces</a>
+          <a href="#sobrenos">Sobre</a>
+          <a href="#contato">Contato</a>
+        </div>
+        <p class="footer-copyright">2024 Doçura Delícia. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
