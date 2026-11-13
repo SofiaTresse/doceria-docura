@@ -2,169 +2,97 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Doçura Delícia - Doceria Artesanal</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#7b3046">
+  <meta name="description" content="Doçura Delícia: uma pausa gostosa no seu dia. Conheça brownies, cookies, palmiers e macarons e monte sua caixinha nesta experiência demonstrativa.">
+  <meta property="og:title" content="Doçura Delícia — Um carinho em forma de doce">
+  <meta property="og:description" content="Doces artesanais para adoçar os pequenos e grandes momentos. Explore o cardápio e monte sua caixinha.">
+  <meta property="og:type" content="website">
+  <title>Doçura Delícia — Um carinho em forma de doce</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/hero-chocolate.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
 </head>
-<body>
-
-  <header class="navbar">
-    <div class="container">
-      <a href="#" class="logo">Doçura<span>.</span></a>
-      <nav>
-        <button class="menu-toggle" aria-label="Abrir menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <nav class="nav-links">
-          <a href="#inicio">Início</a>
-          <a href="#doces">Doces</a>
-          <a href="#sobrenos">Sobre</a>
-          <a href="#contato">Contato</a>
-        </nav>
-      </nav>
+<body id="inicio">
+  <svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20S3 14.5 3 8.5C3 3 10 2 12 7c2-5 9-4 9 1.5C21 14.5 12 20 12 20Z"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2c0 7-3 10-10 10 7 0 10 3 10 10 0-7 3-10 10-10-7 0-10-3-10-10Z"/></symbol>
+  </defs></svg>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="announcement"><span>UM POUQUINHO DE DOÇURA MUDA O DIA <span aria-hidden="true">✳</span></span><span class="demo-label">SITE DEMONSTRATIVO · PEDIDOS SIMULADOS</span></div>
+  <header class="header">
+    <div class="container navigation">
+      <a class="brand" href="#inicio" aria-label="Doçura Delícia, início">doçura<span class="brand-flower" aria-hidden="true">✳</span><small>DELÍCIA · DOCERIA ARTESANAL</small></a>
+      <nav id="main-nav" class="nav-links" aria-label="Navegação principal"><a href="#doces">Nossos doces</a><a href="#sobrenos">Nossa essência</a><a href="#como-pedir">Como pedir</a></nav>
+      <div class="nav-actions"><button class="bag-button" type="button" data-open-cart aria-label="Abrir minha caixinha"><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg><span class="bag-label">Minha caixinha</span><span class="cart-count" aria-hidden="true">0</span></button><button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button></div>
     </div>
   </header>
-
-  <section class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <h1>Delícias para <span>todos os momentos</span></h1>
-        <p>Uma seleção irresistível de doces artesanais. Do brownie fudgy aos cookies crocantes, cada criação é feita com ingredientes selecionados e muito carinho.</p>
-        <div class="hero-buttons">
-          <a href="#doces" class="btn-primary">Ver Cardápio Completo</a>
-          <a href="#contato" class="btn-secondary">Faça um Pedido</a>
-        </div>
+  <main id="conteudo">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span aria-hidden="true">✳</span> PEQUENAS DELÍCIAS. GRANDES MOMENTOS.</p>
+        <h1 id="hero-title">A vida pede<br>uma pausa.<br><em>E um doce.</em><svg class="title-doodle" viewBox="0 0 220 15" aria-hidden="true"><path d="M3 10C63 1 145 1 216 7"/></svg></h1>
+        <p class="hero-description">Tem carinho que a gente sente no primeiro pedaço. Descubra nossos doces artesanais e encontre o seu novo motivo para sorrir.</p>
+        <div class="hero-actions"><a href="#doces" class="button button-primary">Escolher minhas delícias <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a href="#sobrenos" class="text-link">Conheça a Doçura <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-signature"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg><p>Feito à mão. Pensado para encantar.</p></div>
       </div>
-      <div class="hero-image">
-        <div class="sweet-showcase">
-          <div class "sweet-item item-1"></div>
-          <div class="sweet-item item-2"></div>
-          <div class="sweet-item item-3"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <main class="container">
-    <section id="doces" class="section">
-      <div class="section-header">
-        <h2>Nossos <span>Doces</span></h2>
-        <p>Variedade irresistível para satisfazer todos os desejos</p>
-      </div>
-      <div class="products-grid">
-        <article class="product-card">
-          <div class="product-image">
-            <div class="product-badge">Clássico</div>
-            <img src="https://images.unsplash.com/photo-1563951390714-5a16481024ea?w=400&q=80" alt="Brownie">
-            <div class="product-overlay">
-              <h3>Brownies</h3>
-              <p>R$ 22,00</p>
-            </div>
-          </div>
-        </article>
-        <article class="product-card">
-          <div class="product-image">
-            <div class="product-badge">Italiano</div>
-            <img src="https://images.unsplash.com/photo-1577931160557-6a8616805d1d?w=400&q=80" alt="Palmier">
-            <div class="product-overlay">
-              <h3>Palmiers Italianos</h3>
-              <p>R$ 18,00</p>
-            </div>
-          </div>
-        </article>
-        <article class="product-card">
-          <div class="product-image">
-            <img src="https://images.unsplash.com/photo-1555662883-6e2c5d8d6165?w=400&q=80" alt="Cookie">
-            <div class="product-overlay">
-              <h3>Cookies Artesanais</h3>
-              <p>R$ 15,00</p>
-            </div>
-          </div>
-        </article>
-        <article class="product-card">
-          <div class="product-image">
-            <div class="product-badge">Novo</div>
-            <img src="https://images.unsplash.com/photo-1511678536504-6121a196a94f?w=400&q=80" alt="Macarons">
-            <div class="product-overlay">
-              <h3>Macarons</h3>
-              <p>R$ 25,00 uni.</p>
-            </div>
-          </div>
-        </article>
+      <div class="hero-visual">
+        <div class="hero-image-wrap"><img class="hero-image" src="assets/hero-chocolate.jpg" alt="Brownies de chocolate empilhados com uma calda generosa escorrendo por cima" width="1400" height="2100" fetchpriority="high"></div>
+        <div class="artisan-seal" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="seal-circle" d="M60 60m-43 0a43 43 0 1 1 86 0a43 43 0 1 1-86 0"/></defs><circle cx="60" cy="60" r="57"/><text><textPath href="#seal-circle" textLength="263">DOCES ARTESANAIS · FEITOS COM CARINHO · </textPath></text><path d="M60 78S35 63 35 48c0-14 19-16 25-3 6-13 25-11 25 3 0 15-25 30-25 30Z"/></svg></div>
+        <div class="hero-note"><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg><p>Um carinho em<br><em>forma de doce.</em></p></div>
+        <span class="hero-side-note" aria-hidden="true">O MELHOR MOMENTO É AGORA</span>
       </div>
     </section>
+    <div class="ribbon" aria-hidden="true"><div><span>UM DOCE DE MOMENTO</span><b>✳</b><span>FEITO COM CARINHO</span><b>✳</b><span>SABOR QUE ABRAÇA</span><b>✳</b><span>DOÇURA EM CADA DETALHE</span><b>✳</b></div></div>
 
-    <section id="sobrenos" class="section">
-      <div class="about-content">
-        <div class="about-image">
-          <div class="image-placeholder">
-            <div class="chef-icon"></div>
-            <img src="https://images.unsplash.com/photo-1446963114133-14b3f18c5c5e?w=500&q=80" alt="Boleira trabalhando">
-          </div>
-        </div>
-        <div class="about-text">
-          <h2>Sobre Nós</h2>
-          <p>Há mais de 10 anos espalhando doçura por aqui. Na Doçura Delícia, acreditamos que cada momento merece um doce especial. Nossos doces são feitos artesanalmente, com receitas testadas e ingredientes selecionados fresquinhos todos os dias.</p>
-          <ul class="about-features">
-            <li><i class="icon"></i>Feitos na hora</li>
-            <li><i class="icon"></i>Ingredientes frescos</li>
-            <li><i class="icon"></i>Entrega em toda região</li>
-            <li><i class="icon"></i>Atendimento personalizado</li>
-          </ul>
-          <a href="#contato" class="btn-secondary">Venha nos visitar</a>
-        </div>
+    <section class="catalog section container" id="doces" aria-labelledby="catalog-title">
+      <div class="section-heading"><div><p class="eyebrow">O LADO MAIS GOSTOSO DO DIA</p><h2 id="catalog-title">Qual vai ser a sua <em>doçura?</em></h2></div><p>Para dividir, presentear<br>ou guardar só para você.</p></div>
+      <div class="catalog-toolbar"><div class="filters" role="group" aria-label="Filtrar doces por categoria"><button class="filter active" type="button" data-filter="todos" aria-pressed="true">Todos os doces <span>4</span></button><button class="filter" type="button" data-filter="chocolate" aria-pressed="false">Chocolate</button><button class="filter" type="button" data-filter="folhados" aria-pressed="false">Folhados</button><button class="filter" type="button" data-filter="macarons" aria-pressed="false">Macarons</button></div><p class="catalog-count" id="catalog-count" aria-live="polite">4 delícias para descobrir</p></div>
+      <div class="products-grid" id="products-grid">
+        <article class="product-card" data-category="chocolate">
+          <button class="product-photo" type="button" data-details="brownie" aria-label="Ver detalhes de Brownie de chocolate"><img src="assets/brownie.jpg" alt="Brownies com casquinha craquelada e pedaços de chocolate" width="1000" height="667" loading="lazy"><span class="product-badge">O clássico</span><span class="photo-details">Conhecer de pertinho <span aria-hidden="true">↗</span></span></button>
+          <div class="product-info"><span class="product-kicker">INTENSO & ACONCHEGANTE</span><h3>Brownie de chocolate</h3><p>Casquinha delicada por fora, um abraço de chocolate por dentro.</p><div class="product-bottom"><div><span class="price">R$ 22,00</span><small>por unidade</small></div><button class="add-button" type="button" data-add="brownie" aria-label="Adicionar Brownie de chocolate à caixinha">Adicionar <span aria-hidden="true">+</span></button></div></div>
+        </article>
+        <article class="product-card" data-category="chocolate">
+          <button class="product-photo" type="button" data-details="cookie" aria-label="Ver detalhes de Cookie artesanal"><img src="assets/cookie.jpg" alt="Cookies dourados com generosos pedaços de chocolate" width="1000" height="1251" loading="lazy"><span class="product-badge badge-cream">Pausa perfeita</span><span class="photo-details">Conhecer de pertinho <span aria-hidden="true">↗</span></span></button>
+          <div class="product-info"><span class="product-kicker">DOURADO & IRRESISTÍVEL</span><h3>Cookie artesanal</h3><p>Aquela combinação de massa douradinha e pedacinhos de felicidade.</p><div class="product-bottom"><div><span class="price">R$ 15,00</span><small>por unidade</small></div><button class="add-button" type="button" data-add="cookie" aria-label="Adicionar Cookie artesanal à caixinha">Adicionar <span aria-hidden="true">+</span></button></div></div>
+        </article>
+        <article class="product-card" data-category="folhados">
+          <button class="product-photo" type="button" data-details="palmier" aria-label="Ver detalhes de Palmiers italianos"><img src="assets/palmier.jpg" alt="Palmiers folhados em formato de coração, dourados e caramelizados" width="1000" height="1498" loading="lazy"><span class="product-badge badge-cream">Delicado assim</span><span class="photo-details">Conhecer de pertinho <span aria-hidden="true">↗</span></span></button>
+          <div class="product-info"><span class="product-kicker">LEVINHO & CROCANTE</span><h3>Palmiers italianos</h3><p>Camadas de delicadeza e um toque caramelizado para acompanhar o café.</p><div class="product-bottom"><div><span class="price">R$ 18,00</span><small>por unidade</small></div><button class="add-button" type="button" data-add="palmier" aria-label="Adicionar Palmiers italianos à caixinha">Adicionar <span aria-hidden="true">+</span></button></div></div>
+        </article>
+        <article class="product-card" data-category="macarons">
+          <button class="product-photo" type="button" data-details="macaron" aria-label="Ver detalhes de Macarons"><img src="assets/macarons.jpg" alt="Macarons coloridos em tons pastel sobre uma superfície rosa" width="1000" height="667" loading="lazy"><span class="product-badge">Um pequeno encanto</span><span class="photo-details">Conhecer de pertinho <span aria-hidden="true">↗</span></span></button>
+          <div class="product-info"><span class="product-kicker">COLORIDO & ESPECIAL</span><h3>Macarons</h3><p>Pequenos, delicados e cheios de charme. Um presente em cada mordida.</p><div class="product-bottom"><div><span class="price">R$ 25,00</span><small>por unidade</small></div><button class="add-button" type="button" data-add="macaron" aria-label="Adicionar Macarons à caixinha">Adicionar <span aria-hidden="true">+</span></button></div></div>
+        </article>
       </div>
+      <p class="catalog-note"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg> Um site para experimentar: fotos ilustrativas e pedidos apenas simulados.</p>
     </section>
 
-    <section id="contato" class="section">
-      <div class="contact-content">
-        <div class="contact-image">
-          <div class="image-placeholder">
-            <div>📍</div>
-          </div>
-        </div>
-        <div class="contact-form">
-          <h2>Fale Conosco</h2>
-          <form>
-            <div class="form-group">
-              <input type="text" placeholder="Seu nome" required>
-            </div>
-            <div class="form-group">
-              <input type="email" placeholder="Seu e-mail" required>
-            </div>
-            <div class="form-group">
-              <input type="tel" placeholder="Seu telefone">
-            </div>
-            <div class="form-group">
-              <textarea placeholder="Mensagem" rows="3" required></textarea>
-            </div>
-            <button type="submit" class="btn-primary send-btn">Enviar Mensagem</button>
-          </form>
-        </div>
-      </div>
-    </section>
+    <section class="essence section" id="sobrenos" aria-labelledby="essence-title"><div class="container essence-grid"><div class="essence-photos"><img class="essence-main" src="assets/cookie.jpg" alt="Detalhes de um cookie artesanal com chocolate" width="1000" height="1251" loading="lazy"><img class="essence-small" src="assets/brownie.jpg" alt="Brownies sobre uma grade, entre pedaços de chocolate" width="1000" height="667" loading="lazy"><span class="essence-caption">receita de um momento feliz</span><svg class="essence-heart icon" aria-hidden="true"><use href="#i-heart"/></svg></div><div class="essence-copy"><p class="eyebrow">NOSSA ESSÊNCIA</p><h2 id="essence-title">Mais que um doce.<br><em>Um jeito de cuidar.</em></h2><p>A gente acredita que os melhores momentos também moram nas pequenas coisas. No café da tarde sem pressa, no presente inesperado, no último pedacinho dividido com alguém.</p><p>É desse carinho que nasce a Doçura Delícia: doces artesanais, ingredientes selecionados e atenção aos detalhes que fazem cada criação especial.</p><div class="essence-values"><div><span aria-hidden="true">01</span><h3>Feito à mão</h3><p>O cuidado artesanal em cada detalhe.</p></div><div><span aria-hidden="true">02</span><h3>Feito para sentir</h3><p>Texturas e sabores que abraçam.</p></div></div><a href="#doces" class="text-link">Encontre o seu doce favorito <span aria-hidden="true">↗</span></a></div></div></section>
+
+    <section class="moments container section" aria-labelledby="moments-title"><div class="section-heading"><div><p class="eyebrow">SEMPRE EXISTE UM BOM MOTIVO</p><h2 id="moments-title">Para cada momento,<br><em>uma pitada de doçura.</em></h2></div><svg class="moments-spark icon" aria-hidden="true"><use href="#i-spark"/></svg></div><div class="moments-grid"><a class="moment" href="#doces"><span class="moment-number">01 / SÓ SEU</span><h3>A pausa que<br>você merece.</h3><p>Um café, seu doce favorito e alguns minutos para aproveitar o agora.</p><span class="moment-link">Escolher meu doce <span aria-hidden="true">↗</span></span></a><a class="moment" href="#doces"><span class="moment-number">02 / PARA ALGUÉM</span><h3>Um presente<br>que abraça.</h3><p>Tem carinho que cabe em uma caixinha. Escolha as delícias e surpreenda.</p><span class="moment-link">Montar um carinho <span aria-hidden="true">↗</span></span></a><a class="moment" href="#doces"><span class="moment-number">03 / PARA COMPARTILHAR</span><h3>Uma mesa cheia<br>de momentos.</h3><p>Pequenas comemorações, encontros especiais e mais um motivo para sorrir.</p><span class="moment-link">Adoçar o encontro <span aria-hidden="true">↗</span></span></a></div></section>
+
+    <section class="order-section" id="como-pedir" aria-labelledby="order-title"><div class="container order-layout"><div><p class="eyebrow">SUA CAIXINHA, DO SEU JEITO</p><h2 id="order-title">É só escolher.<br><em>O encanto vem junto.</em></h2><p>Monte a combinação que tem tudo a ver com o seu momento.</p><a class="button button-primary" href="#doces">Começar minha seleção <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div><ol class="order-steps"><li><span>01</span><div><h3>Encontre seus favoritos</h3><p>Explore o cardápio e adicione os doces à sua caixinha.</p></div></li><li><span>02</span><div><h3>Deixe com a sua cara</h3><p>Ajuste as quantidades e conte qual é a ocasião.</p></div></li><li><span>03</span><div><h3>Experimente a encomenda</h3><p>Veja o resumo e finalize a simulação. Nenhum pagamento ou envio será feito.</p></div></li></ol></div></section>
+
+    <section class="faq container section" aria-labelledby="faq-title"><div><p class="eyebrow">ANTES DO PRIMEIRO PEDAÇO</p><h2 id="faq-title">Uma dúvida?<br><em>A gente adoça.</em></h2></div><div class="faq-list"><details><summary>Como funciona a encomenda neste site?<span aria-hidden="true">+</span></summary><p>Este é um projeto demonstrativo. Você pode adicionar doces à caixinha, ajustar quantidades e preencher uma encomenda de teste. Ao finalizar, um resumo é exibido na tela. Nada é enviado para uma doceria.</p></details><details><summary>Posso combinar doces diferentes?<span aria-hidden="true">+</span></summary><p>Sim! Misture brownies, cookies, palmiers e macarons como preferir. O valor da seleção é atualizado automaticamente conforme você adiciona ou remove itens.</p></details><details><summary>Posso simular um presente ou uma comemoração?<span aria-hidden="true">+</span></summary><p>Pode! Na etapa final, escolha a ocasião, uma data e escreva um recadinho. Esses dados fazem parte da sua simulação e não são enviados a um servidor.</p></details><details><summary>Os doces têm informações sobre alergênicos?<span aria-hidden="true">+</span></summary><p>As fotos e descrições são ilustrativas. Antes de uma compra real, confirme com o fornecedor os ingredientes, alergênicos, porções, disponibilidade e condições de entrega.</p></details></div></section>
+
+    <section class="contact-section container" id="contato" aria-labelledby="contact-title"><div class="contact-banner"><div class="contact-copy"><p class="eyebrow">SEU PRÓXIMO MOMENTO GOSTOSO</p><h2 id="contact-title">Hoje combina<br>com <em>doçura.</em></h2><p>Escolha seus favoritos e monte uma caixinha com a sua cara.</p><a href="#doces" class="button button-primary">Quero montar a minha <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><span class="contact-demo">Uma experiência de encomenda demonstrativa.</span></div><div class="contact-photo"><img src="assets/mesa-doces.jpg" alt="Mesa com macarons coloridos e biscoitos para compartilhar" width="1400" height="933" loading="lazy"><span aria-hidden="true">com carinho,<br><em>Doçura.</em></span></div></div></section>
   </main>
+  <footer class="footer"><div class="container footer-main"><a class="brand" href="#inicio">doçura<span class="brand-flower" aria-hidden="true">✳</span><small>DELÍCIA · DOCERIA ARTESANAL</small></a><p>Pequenos doces.<br>Memórias que ficam.</p><nav aria-label="Navegação do rodapé"><a href="#doces">Nossos doces</a><a href="#sobrenos">Nossa essência</a><a href="#como-pedir">Como pedir</a></nav><a class="back-top" href="#inicio">De volta ao topo <span aria-hidden="true">↑</span></a></div><div class="container footer-bottom"><p>© <span id="year">2026</span> Doçura Delícia · Projeto demonstrativo.</p><p>Site criado por <a href="https://github.com/SofiaTresse" target="_blank" rel="noopener noreferrer">Sofia Tresse <span aria-hidden="true">↗</span></a></p></div></footer>
+  <div class="toast" role="status" aria-live="polite" id="toast"></div>
 
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <a href="#" class="footer-logo">Doçura<span>.</span></a>
-        <div class="footer-links">
-          <a href="#inicio">Início</a>
-          <a href="#doces">Doces</a>
-          <a href="#sobrenos">Sobre</a>
-          <a href="#contato">Contato</a>
-        </div>
-        <p class="footer-copyright">2024 Doçura Delícia. Todos os direitos reservados.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="scripts.js"></script>
+  <dialog class="product-dialog" id="product-dialog" aria-labelledby="detail-name"><button class="close-button" type="button" data-close-dialog aria-label="Fechar detalhes"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button><div id="detail-content"></div></dialog>
+  <dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title"><div class="drawer-header"><div><p class="eyebrow">UM POUQUINHO DE FELICIDADE</p><h2 id="cart-title">Minha caixinha<span>.</span></h2></div><button class="close-button" type="button" data-close-dialog aria-label="Fechar caixinha"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></div><div class="cart-items" id="cart-items"></div><div class="cart-footer" id="cart-footer"><div class="cart-total"><span>Total da seleção</span><strong id="cart-total">R$ 0,00</strong></div><p>Simulação sem cobrança. Sem entrega ou retirada reais.</p><button class="button button-primary" id="checkout-button" type="button">Simular encomenda <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button><button class="continue-button" type="button" data-close-dialog>Continuar escolhendo</button></div></dialog>
+  <dialog class="checkout-dialog" id="checkout-dialog" aria-labelledby="checkout-title"><button class="close-button" type="button" data-close-dialog aria-label="Fechar simulação"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button><p class="eyebrow">SÓ MAIS UM POUQUINHO DE CARINHO</p><h2 id="checkout-title">Seu momento <em>doce.</em></h2><p class="checkout-intro">Conte como imagina sua encomenda. Esta é uma simulação: os dados ficam apenas nesta página.</p><form id="order-form"><div class="field"><label for="customer-name">Como podemos chamar você?</label><input id="customer-name" name="name" type="text" placeholder="Seu nome" minlength="2" maxlength="70" autocomplete="given-name" required></div><div class="field-row"><div class="field"><label for="order-date">Para qual data?</label><input id="order-date" name="date" type="date" required></div><div class="field"><label for="occasion">Qual é a ocasião?</label><select id="occasion" name="occasion"><option>Um carinho para mim</option><option>Um presente especial</option><option>Uma comemoração</option><option>Um encontro entre amigos</option></select></div></div><div class="field"><label for="order-note">Quer deixar um recadinho? <span>(opcional)</span></label><textarea id="order-note" name="note" rows="3" maxlength="400" placeholder="Conte um pouquinho sobre sua ideia..."></textarea></div><div class="checkout-summary" id="checkout-summary"></div><p class="simulation-notice">Este pedido é de demonstração. Nenhum dado será enviado e nenhum valor será cobrado.</p><button class="button button-primary" type="submit">Finalizar simulação <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button><button class="continue-button" id="back-to-cart" type="button">Voltar para a caixinha</button></form></dialog>
+  <dialog class="success-dialog" id="success-dialog" aria-labelledby="success-title"><button class="close-button" type="button" data-close-dialog aria-label="Fechar resumo"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button><span class="success-heart"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></span><p class="eyebrow">SIMULAÇÃO CONCLUÍDA</p><h2 id="success-title">Uma caixinha<br><em>cheia de carinho.</em></h2><p id="success-greeting"></p><div id="success-summary" class="success-summary"></div><p class="simulation-notice">Nenhum pedido foi enviado ou cobrado. Este resumo é apenas uma demonstração.</p><button class="button button-primary" type="button" data-close-dialog>Continuar explorando <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></dialog>
+  <noscript><div class="noscript-note">O cardápio pode ser consultado normalmente. Ative o JavaScript para usar os filtros e simular sua caixinha.</div></noscript>
 </body>
 </html>
